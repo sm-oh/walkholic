@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WALK HOLiC</title>
+  <!-- Common -->
+  <link rel="stylesheet" href="./mobile/css/common.css" type="text/css">
+  <!-- MOBLIE Layout -->
+  <link rel="stylesheet" href="./mobile/css/mlayout.css" type="text/css">
+  <!-- MOBLIE main -->
+  <link rel="stylesheet" href="./mobile/css/mmain.css" type="text/css">
+  <!-- Swiper PlugIn css -->
+  <link rel="stylesheet" href="./mobile/css/swiper.css" type="text/css">
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" type="text/css">
+  <!-- JQUERY -->
+  <!-- 접두사 자동으로 붙여주는 스크립트 -->
+  <script src="./mobile/script/prefixfree.min.js"></script>
+  <!-- 제이쿼리 라이브러리 연결 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+  <input type="checkbox" id="toggle">
+
+  <!-- 헤더영역 시작 -->
+  <header>
+    <h1>
+      <img src="./mobile/mimages/m_logo.svg" alt="워크홀릭 로고">
+    </h1>
+
+    <label class="menu_tap" for="toggle"></label>
+    <span class="map"></span>
+
+    <nav class="gnb">
+      <div class="header">
+        <div class="gnb_top">
+          <label class="times" for="toggle"></label>
+          <span class="alarm"></span>
+        </div>
+        <div class="gnb_bottom d-flex">
+          <img src="./mobile/mimages/pc_logo.png" alt="메인로고">
+          <div class="info_wrap d-flex">
+            <a href="login.html" title="로그인 페이지 이동">로그인이 필요합니다.</a>
+            <div class="info d-flex jcsb">
+              <a href=""><i class="point"></i>&nbsp;</a>
+              <a href=""><i class="mileage"></i>&nbsp;</a>
+              <label class="label">
+                <input type="button" value="출석체크" id="mark">
+                <i class="check"></i>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <ul class="nav">
+        <li><a href=""><span class="bold">장기</span>코스</a></li>
+        <li><a href=""><span class="bold">단기</span>코스</a></li>
+        <li><a href=""><span class="bold">테마</span>코스</a></li>
+        <li><a href=""><span class="bold">굿즈</span>샵</a></li>
+        <li class="sub_wrap"><a href="#" title="소통창구"><span class="bold">소통</span>창구<i class="down_btn"></i></a>
+          <ul class="sub">
+            <li><a href="#" title="공지사항">공지사항</a></li>
+            <li><a href="#" title="코스후기">코스후기</a></li>
+            <li><a href="#" title="고객센터">고객센터</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="footer d-flex jcsb">
+        <p>
+          <i class="lang"></i>
+          <span>Language</span>
+        </p>
+        <p>
+          <i class="opt"></i>
+          <span>설정</span>
+        </p>
+      </div>
+    </nav>
+  </header>
+  
+  <main>
+    <div class="container">
+      <div class="main-image">
+        <div class="main" id="main1"></div>
+        <div class="main" id="main2"></div>
+        <div class="main" id="main3"></div>
+        <div class="main" id="main4"></div>
+      </div>
+      <div class="thumb-image">
+        <div class="thumb" id="thumb1"></div>
+        <div class="thumb" id="thumb2"></div>
+        <div class="thumb" id="thumb3"></div>
+        <div class="thumb" id="thumb4"></div>
+      </div>
+    </div>
+
+    <section class="theme">
+      <h2 class="d-flex">
+        <span class="main_h"><strong>테마</strong>코스</span>
+        <span>&#35;발길따라 입맛대로</span>
+      </h2>
+      <div class="slide">
+        <div class="swiper-container theme_slide"> 
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" title="역사코스">
+                <img src="./mobile/mimages/theme_history.png" alt="역사코스">
+                <div class="theme_desc">
+                  <p>현재 속에 살아있는 과거</p>
+                  <h3><strong>역사</strong>코스</h3>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" title="경관코스">
+                <img src="./mobile/mimages/theme_view.png" alt="경관코스">
+                <div class="theme_desc">
+                  <p>어쩌면 몰랐을 아름다운 대한민국</p>
+                  <h3><strong>경관</strong>코스</h3>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" title="축제코스">
+                <img src="./mobile/mimages/theme_festival.png" alt="축제코스">
+                <div class="theme_desc">
+                  <p>당신의 발걸음에 힐링부터 낭만까지</p>
+                  <h3><strong>축제</strong>코스</h3>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" title="캠핑코스">
+                <img src="./mobile/mimages/theme_camping.png" alt="캠핑코스">
+                <div class="theme_desc">
+                  <p>자연과 하나되어 누비는 대한민국 영토</p>
+                  <h3><strong>캠핑</strong>코스</h3>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" title="맛집코스">
+                <img src="./mobile/mimages/theme_taste.png" alt="맛집코스">
+                <div class="theme_desc">
+                  <p>전국 각지의 미식을 즐길 수 있는</p>
+                  <h3><strong>맛집</strong>코스</h3>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" title="반려코스">
+                <img src="./mobile/mimages/theme_pet.png" alt="반려코스">
+                <div class="theme_desc">
+                  <p>반려동물과 함께</p>
+                  <h3><strong>반려</strong>코스</h3>
+                </div>
+              </a>
+            </div>
+          </div><!--//End .swiper-wrapper-->
+        </div> <!--//End .swiper-container-->
+        <div class="swiper-pagination"></div>
+      </div> <!--//End .slide-->
+    </section>
+
+    <section class="course">
+      <h2 class="d-flex">
+        <span class="main_h"><strong>코스</strong>후기</span>
+        <span>&#35;워크홀릭들의 찐 후기</span>
+      </h2>
+      <div class="course_top">
+        <img src="./mobile/mimages/course_banner.png" alt="코스후기 배너">
+        <div>
+          <p><strong>코스</strong>후기</p>
+          <p>
+            남들과 틀린것이 아닌 다름을 느끼며<br>
+            나만의 길을 찾아떠났던 워크홀릭들의 소중한 경험들
+          </p>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="swiper-container courseSlide">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./mobile/mimages/course_img1.png" alt="이미지">
+              <div class="course_desc">
+                <strong>일몰맛집 강화도에서 맞이하는 마지막 여정</strong>
+                <p>서해안 코스를 따라 걸으며 마침내 강화도에 도착했었는데 정말 감격스럽더라구요!! 처음 발길을 떼기 시작했던 게 정말 엊그제 같았는데</p>
+                <span class="date">May 22. 2023</span>
+                <a href="#" title="" class="course-point point1">4.2</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./mobile/mimages/course_img2.png" alt="이미지">
+              <div class="course_desc">
+                <strong>제주 둘레길에서 경험한 힐링 그 자체였던 제주만의 감성여행</strong>
+                <p>제주도를 처음 방문했을 때는 그냥 관광으로 시작했었지만 둘레길을 걷기위해 마음을 먹었던 이유는 바로 우연찮게 둘레길을 걷게 되면서</p>
+                <span class="date">April 28. 2023</span>
+                <a href="#" title="" class="course-point point1">4.8</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./mobile/mimages/course_img3.png" alt="이미지">
+              <div class="course_desc">
+                <strong>고생이란 고생은 다하고 왔던 내새꾸랑 첫번째 여행길</strong>
+                <p>정말 꿈과 희망을 다 가지고 출발했던 우리집 애교쟁이랑의 첫번째 여행길이었는데 준비가 너무 미흡했었던 여행길이라</p>
+                <span class="date">June 23. 2023</span>
+                <a href="#" title="" class="course-point point2">3.5</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./mobile/mimages/course_img4.png" alt="이미지">
+              <div class="course_desc">
+                <strong>낭만이 넘쳐 흘렀던 잊지못할 백패킹 첫경험</strong>
+                <p>중간에 힘들면 그만해야지 하며 시작했던 발걸음이었지만 날이 갈수록 더 설레고 가슴뛰게 했던 첫번째 백패킹 여행</p>
+                <span class="date">June 14. 2023</span>
+                <a href="#" title="" class="course-point point1">5.0</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./mobile/mimages/course_img5.png" alt="이미지">
+              <div class="course_desc">
+                <strong>진정한 나를 찾을 수 있었던 소중한 여행길</strong>
+                <p>서울에서 시작해서 강원도에서 끝나는 횡단코스를 시작하며 내가 잘할 수 있을까 라는 걱정이 가장 먼저 앞섰던</p>
+                <span class="date">June 2. 2023</span>
+                <a href="#" title="" class="course-point point1">4.9</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./mobile/mimages/course_img6.png" alt="이미지">
+              <div class="course_desc">
+                <strong>아쉬움이 정말 많이 남았던 코스로 기억될 낙동강 코스</strong>
+                <p>자연경관은 정말 너무 예뻤지만 정말 위험한 순간도 많았던 탓에 좋으면서도 실망적이었던 이번 여행길은 정말</p>
+                <span class="date">June 14. 2023</span>
+                <a href="#" title="" class="course-point point3">2.9</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./mobile/mimages/course_img7.png" alt="이미지">
+              <div class="course_desc">
+                <strong>벌써 세번째를 맞이한 나의 여행기</strong>
+                <p>이번엔 익숙했던 길보다는 새로운 길을 걷고 싶었던 찰나에 나를 찾는 여행길보단 이쁜걸 찾아 떠나는 길을 걸어</p>
+                <span class="date">May 22. 2023</span>
+                <a href="#" title="" class="course-point point1">4.2</a>
+              </div>
+            </div>
+            <div class="swiper-slide last_course">
+              <img src="./mobile/mimages/course_img8.png" alt="이미지">
+              <div class="course_desc">
+                <a href="#" title="코스후기 더보기" class="more-icon">더보기<i class="fas fa-plus"></i></a>
+              </div>
+            </div>
+          </div> <!--//End .swiper-wrapper -->
+        </div> <!--//End .swiper-container -->
+        <div class="swiper-pagination1"></div>
+      </div>
+    </section>
+
+    <section class="goods">
+      <h2 class="d-flex">
+        <span class="main_h"><strong>굿즈</strong>샵</span>
+        <span>&#35;발길따라 입맛대로</span>
+      </h2>
+      <div class="donate">
+        <p>
+          WALKHOLiC&trade; 굿즈샵의 판매 수익 일부분은 대한민국 국토대장정의 발전과 청년 일자리 장려 지원금 및 취업 지원금으로 후원됩니다.
+        </p>
+      </div>
+      <div class="slide product">
+        <ul class="swiper-container product_list d-flex">
+          <li class="swiper-wrapper prod d-flex">
+            <ul class="swiper-slide item_wrap d-flex">
+              <li class="item">
+                <a href="#" title="키링">
+                  <img src="./mobile/mimages/goods-product-01.jpg" alt="#">
+                  <p>WALKHOLiC 키링</p>
+                  <p>&#8361; 5,500 / 550</p>
+                </a>
+              </li>
+              <li class="item">
+                <a href="#" title="볼캡">
+                  <img src="./mobile/mimages/goods-product-02.jpg" alt="볼캡">
+                  <p>WALKHOLiC 볼캡</p>
+                  <p>&#8361; 7,500 / 750</p>
+                </a>
+              </li>
+            </ul>
+            <ul class="swiper-slide item_wrap d-flex">
+              <li class="item">
+                <a href="#" title="티셔츠">
+                  <img src="./mobile/mimages/goods-product-03.jpg" alt="티셔츠">
+                  <p>WALKHOLiC 티셔츠</p>
+                  <p>&#8361; 11,500 / 1150</p>
+                </a>
+              </li>
+              <li class="item">
+                <a href="#" title="마스크">
+                  <img src="./mobile/mimages/goods-product-04.jpg" alt="마스크">
+                  <p>WALKHOLiC 마스크</p>
+                  <p>&#8361; 6,400 / 640</p>
+                </a>
+              </li>
+            </ul>
+            <ul class="swiper-slide item_wrap d-flex">
+              <li class="item">
+                <a href="#" title="백팩 40">
+                  <img src="./mobile/mimages/goods-product-05.jpg" alt="백팩 40">
+                  <p>WALKHOLiC 백팩 40L</p>
+                  <p>&#8361; 48,900 / 4890</p>
+                </a>
+              </li>
+              <li class="item">
+                <a href="#" title="기능성 T">
+                  <img src="./mobile/mimages/goods-product-06.jpg" alt="기능성 T">
+                  <p>WALKHOLiC 기능성 T</p>
+                  <p>&#8361; 16,500 / 1650</p>
+                </a>
+              </li>
+            </ul>
+            <ul class="swiper-slide item_wrap d-flex">
+              <li class="item">
+                <a href="#" title="기능성 T">
+                  <img src="./mobile/mimages/goods-product-07.jpg" alt="기능성 T">
+                  <p>WALKHOLiC 코팅 컵</p>
+                  <p>&#8361; 5,800 / 580</p>
+                </a>
+              </li>
+              <li class="item">
+                <a href="#" title="더보기" class="more-icon">더보기</a>
+              </li>
+            </ul>
+          </li> <!--//End swiper-wrapper-->
+        </ul><!--//End .swiper-container-->
+        <div class="swiper-pagination2"></div>
+      </div> <!--//End .product-->
+    </section>
+
+
+    <section class="communication">
+      <h2 class="d-flex">
+        <span class="main_h"><strong>소통</strong>창구</span>
+        <span>&#35;워크홀릭! 확인해요</span>
+      </h2>
+      <div class="comm notice">
+        <a href="#" title="더보기" class="more-icon">더보기<i class="fas fa-plus"></i></a>
+        <h3>공지사항</h3>
+        <strong>2023년 6월 판매수익금 기부 현황</strong>
+        <p>WALKHOLiC™ 굿즈샵 판매수익금 기부현황 및 전달사항입니다. 6월 한달 동안 저희 WALKHOLiC 이용자 여러분의 성원에 많은 기부금이 모였습니다</p>
+        <span class="date">July 3. 2023</span>
+      </div>
+      <div class="comm report">
+        <a href="#" title="더보기" class="more-icon">더보기<i class="fas fa-plus"></i></a>
+        <h3>보도자료</h3>
+        <strong>방학맞이 ‘공동체 의식 함양’, 대학생 100명의 대담한 도전</strong>
+        <p>여름방학을 맞이한 대학생 100여 명은 “대담한 도전” 이 다가오는 2023년 7월 15일에 진행됩니다. 많은 관심을 통해 조기 마감된 이 행사는 정말 뜻</p>
+        <span class="date">July 3. 2023</span>
+      </div>
+      <div class="comm qna">
+        <a href="#" title="더보기" class="more-icon">더보기<i class="fas fa-plus"></i></a>
+        <h3>국토대장정 QnA</h3>
+        <p>자주 찾는 질문</p>
+        <div class="accordion">
+          <ul>
+            <li class="quest">
+              <a href="#" title="qna">국토대장정이 처음인데 어떤것부터 준비해야 하나요?<i class="fas fa-chevron-down"></i></a>
+              <ul>
+                <li>
+                  국토대장정을 갈 때 필요한 준비물에 대해 공유해보려고 합니다.<br>
+                  처음에 계획을 짜면서 필수적으로 필요한 준비물이 무엇일까 생각하여 이렇게 메모를 해두었습니다. <br>
+                  <br>
+                  [기초화장품] 스킨, 크림, 선크림 [세면도구] 폼클렌징, 클렌징오일, 칫솔, 치약, 면봉<br>
+                  [양말] 발가락등산양말 4켤레, 일반 스포츠양말 2켤레, 일반 얇은 양말 1켤레, 발목보호대 1개, 무릎보호대 2개, [비상약] 진통제, 소화제, 감기약, 반창고, 파스, 바늘 등, 텀블러, [옷] 반팔 3개, 바지 3개, 속옷 4세트, 잠옷 1벌, 맨투맨, 바람막이, [옷걸이] 3개, 마스크 넉넉하게, 여행용 휴지, 팔토시, 우비, 손빨래 할 세제, 바디로션, 슬리퍼, 물통, 간식, 힙색, 테이핑, 여행용 물티슈 1개 [기타 필요한 용품] 등<br><br>이외에도 개인적으로 챙기시는 것이 좋지만 경량화 하는것 또한 중요하다고 생각합니다.
+                </li>
+              </ul>
+            </li>
+            <li class="quest">
+              <a href="#" title="qna">국토대장정에 꼭 챙겨 가야 할 물품은 어떤건가요?<i class="fas fa-chevron-down"></i></a>
+              <ul>
+                <li>
+                  1. 스포츠 의류, 수건<br>
+                  2. 우의 <br>
+                  3. 선크림 <br>
+                  4. 물집이나 염증 치료제<br>
+                  다른건 몰라도 상기 4개의 제품은 꼭 챙기시는게 좋을것 같습니다. 발로 걸어가는 국토대장정의 경우 ‘물집과 염증과의 싸움’이라고 표현할 수 있을 정도로 물집과 발목, 무릎 관절 염증은 꾸준히 따라다닌답니다.<br>
+                  보통 물집이 생기면 물집안의 물을 빼고 소독한 후 바람이 잘 통하게 해두어야 빨리 낫는데, 국토대장정 중에는 응급치료만 하고 다음날 다시 또 걸어야하기 때문에 제대로 낫기가 힘듭니다. 어느 정도의 통증은 감내하면서 걸어야 하죠. 그렇기 때문에 제대로 된 물집치료, 관리를 위한 물품들은 도보로 하는 국토대장정에서 필수랍니다.
+                </li>
+              </ul>
+            </li>
+            <li class="quest">
+              <a href="#" title="qna">국토대장정 기간은 어느정도가 적당할까요?<i class="fas fa-chevron-down"></i></a>
+              <ul>
+                <li>
+                  1. 기간<br>
+                  기간은 하루에 몇km 갈것이냐에 따라 결정되는데요, 기간은 그냥 하루에 10km씩 걸어간다 하시면 150~160일 잡으시면 되고 20km씩 간다하면 75에서 80일 정도 나옵니다.
+                  <br>1-1 기상요건<br>
+                  하지면 여기서 끝이 아닙니다. 우리나라는 사계가 뚜렷하고, 맑은 날이 있으면 비오늘 날도 있지 않습니까? 또 6월쯤이면 폭우 등의 기상상황으로 인해 정상적인 횡단이 불가능한 날이 있을겁니다. 위에서 구한 기간에서 최소한 5~10일은 추가하시는 것을 추천드립니다.<br>
+                  2. 비용도 추가해볼게요<br>
+                  비용은 일단 거리가 거리다 보니 시간도 많이 들겁니다. 적어도 한달 이상은 걸리실것 같은데 여관에서 잔다 치고 물값, 약값, 비상금 등을 생각해보면 하루에 적어도 2만원은 쓴다고 가정하시는 것을 추천드립니다.
+                </li>
+              </ul>
+            </li>
+            <li class="quest">
+              <a href="#" title="qna">국토대장정을 개인으로 가도 괜찮을까요?<i class="fas fa-chevron-down"></i></a>
+              <ul>
+                <li>
+                  홀로 여행을 다녀오신 분의 후기를 공유해드릴게요.<br>
+                  아마 출발하시기 전에 한번 읽어보신다면 느끼시는 바가 있으실것 같아요.
+                  <br><br>[홀로 떠나는 국토대장정] 안녕 나는 혼자 국토대장정을 다녀온 사람이야 그리고 이 글은 내가 혼자 국토대장정을 떠나기 전날 심심하기도 하고 혹시 나처럼 국토대장정을 떠날 마음은 먹었으나 어떻게 해야 하는지 정보가 없는 사람에게 도움이 됐으면 좋겠다 싶어서 썼어.<br>
+                  <Br>
+                  -이 글에서는 너네가 떠날 여정의 스포일러가 간간이 있을 수도 있어 혹시라도 그런거에 민감한 사람은 피해줬으면 좋겠어 내 글을 읽고 강렬한 직접경험을 놓쳐버리면 얼마나 아깝겠어 그리고 그런 내용들은 후기 글을 통해 사진과 함께해서 추가로 글을 작성해볼게- <br>
+                  https://m.blog.naver.com/just_goit/22197243<br>9637
+                </li>
+              </ul>
+            </li>
+            <li class="quest">
+              <a href="#" title="qna">국토대장정을 하면서 주의해야할 것은 무엇인가요?<i class="fas fa-chevron-down"></i></a>
+              <ul>
+                <li>
+                  대체로 폭염 속에 하루 7~8시간씩 30~40㎞를 도보로 이동하는 국토대장정의 특성상 가장 우려되는 부분은 열사병이다. 전문가들은 이동시 열사병에 걸리지 않기 위해서는 폭염 시 무리한 행군을 지양하고 물을 많이 마셔야 한다고 강조했다. 또 더위로 인한 현기증, 메스꺼움, 근육경련 등이 생기면 시원한 장소에서 쉬면서 즉시 가까운 병원으로 이동해 진료를 받아야 한다고 조언했다. 다음은 국토대장정시 주의해야 할 안전수칙들이다.<br>
+                  [열사병 증세] 혼수상태 및 경련, 발작 증세 등 [주의해야 할 사람] 심장이나 혈관질환이 있는경우, 폐질환이나 신장이 안좋은 경우, 과체중이나 저체중일 경우 [열사병 예방법] 맹물보다는 소금을 조금 탄 물을 마신다. 몸을 식히고 빨리 병원으로 이동한다. 등
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--//End #accordion -->
+      </div>
+    </section>
+
+    <article class="banner">
+      <h2 class="hidden">광고배너</h2>
+      <a href="#" title="배너1">
+        <img src="./mobile/mimages/Banner_1.jpg" alt="이미지">
+      </a>
+    </article>
+
+    <footer>
+      <div class="f_top">
+        <p><strong>개인정보 처리방침</strong></p>
+        <ul class="d-flex jcsb">
+          <li><a href="#" title="저작권 보호정책">저작권 보호정책</a></li>
+          <li><a href="#" title="영상정보처리기 운영관리방침">영상정보처리기 운영관리방침</a></li>
+          <li><a href="#" title="전자우편 무단수집거부">전자우편 무단수집거부</a></li>
+        </ul>
+      </div>
+      <div class="f_middle d-flex">
+        <img src="./mobile/mimages/footer-logo.png" alt="푸터로고">
+        <div class="connect">
+          <select name="#" id="family-site" onchange="if(this.value) window.open(this.value);">
+            <option value="">여행관련 사이트</option>
+            <option value="https://knto.or.kr/">한국광관공사</option>
+            <option value="https://korean.visitkorea.or.kr/main/main.do">대한민국구석구석</option>
+            <option value="https://www.durunubi.kr/">두루누비</option>
+            <option value="https://gocamping.or.kr/">고캠핑</option>
+            <option value="http://hikr.visitkorea.or.kr/">하이커그라운드</option>
+          </select>
+          <div class="sns d-flex jcsa">
+            <span class="youtube">유투브</span>
+            <span class="kakao">카카오톡</span>
+            <span class="insta">인스타그램</span>
+          </div>
+        </div>
+      </div>
+      <div class="ver">
+        <a href="https://glocy.github.io/walkholic/index.html" title="">PC 버전</a>
+      </div>
+      <div class="f_bottom">
+        <address>
+          <div class="add_wrap">
+            <p>사업자 정보<i class="fas fa-chevron-down"></i></p>
+            <ul class="add">
+              <li>대표자 : 강윤후 오승민 윤태종</li>
+              <li>사업자등록번호 : 123-45-67890</li>
+              <li>통신판매업신고 : 2023-서울종로 204호</li>
+              <li>서울특별시 종로구 관수동 수표로 96 2F 국일관 204호</li>
+              <li>Tel. 02-722-2111</li>
+            </ul>
+          </div>
+          <p>Copyright&copy; 2023 WALKHOLiC. all rights reserved.</p>
+        </address>
+      </div>
+    </footer>
+
+    <!-- 스와이퍼 스크립트 소스 -->
+    <script src="./mobile/script/swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    
+    <script>
+      // GNB
+      $('.sub_wrap').click(function(){
+        $('.sub').slideToggle('fast');
+        if($('.down_btn').hasClass("down_btn")){
+          $('.down_btn').removeClass('down_btn').addClass('up_btn');
+        } else {
+          $('.up_btn').removeClass('up_btn').addClass('down_btn');
+        };
+        return false;
+      });
+
+      // GNB 출석체크
+        $(function(){
+          $('#mark').click(function(){
+            $('.check').attr('class','checked');
+          })
+        });
+
+      // Main Slide
+      $('#main1').addClass('on');
+      $('#thumb1').addClass('active');
+  
+      $('#thumb1, #thumb2, #thumb3, #thumb4').click(function() {
+      $(this).addClass('active').siblings().removeClass('active');
+      let mainId = $(this).attr('id').replace('thumb', 'main');
+      $('#' + mainId).addClass('on').siblings().removeClass('on');
+
+      let thumbId = $(this).attr('id');
+        if (thumbId === 'thumb1') {
+          $('#thumb1').css('z-index', 4);
+          $('#thumb2').css('z-index', 3);
+          $('#thumb3').css('z-index', 2);
+          $('#thumb4').css('z-index', 1);
+        } else if (thumbId === 'thumb2') {
+          $('#thumb1').css('z-index', 3);
+          $('#thumb2').css('z-index', 4);
+          $('#thumb3').css('z-index', 3);
+          $('#thumb4').css('z-index', 2);
+        } else if (thumbId === 'thumb3') {
+          $('#thumb1').css('z-index', 2);
+          $('#thumb2').css('z-index', 3);
+          $('#thumb3').css('z-index', 4);
+          $('#thumb4').css('z-index', 3);
+        } else if (thumbId === 'thumb4') {
+          $('#thumb1').css('z-index', 1);
+          $('#thumb2').css('z-index', 2);
+          $('#thumb3').css('z-index', 3);
+          $('#thumb4').css('z-index', 4);
+        }
+      });
+
+      // THEME
+      let swiper = new Swiper('.theme_slide',{
+        spaceBetween:0,
+        centerSlide:true,
+        slidesPerView:1,
+        pagination:{
+          el:'.swiper-pagination',
+          clickable:true,
+        slidesToScroll: 1,
+        },
+      });
+
+      // COURSE
+      let swiper2 = new Swiper('.courseSlide',{
+        spaceBetween:0,
+        centerSlide:true,
+        pagination:{
+          el:'.swiper-pagination1',
+          clickable:true,
+        slidesToScroll: 1,
+        },
+      });
+
+      // GOODS
+      let swiper3 = new Swiper('.product_list',{
+        spaceBetween:0,
+        slidesPerView:2,
+        centerSlide:true,
+        paginaition :{
+          el:'.swiper-pagination2',
+          clickable:true,
+        slidesToScroll: 1,
+        },
+      });
+
+
+
+      // Communite Accordion 
+      $(".quest > a").click(function(e){
+        e.preventDefault();
+        $(this).parent().find('li').slideToggle();
+        $(".quest > a").not(this).parent().find('li').slideUp();
+        $(this).find('i').toggleClass('fa-chevron-down fa-chevron-up');
+        $(".quest > a").not(this).find('i').removeClass('fa-chevron-up').addClass('fa-chevron-down');
+        return false;
+      });
+
+      //address
+      $('.add_wrap:first-of-type').click(function(){
+        $('.add').slideToggle('fast');
+        if($('.add_wrap > p > i').hasClass("fa-chevron-down")){
+          $('.add_wrap > p > i').removeClass('fa-chevron-down').addClass('fa-chevron-up');
+        } else {
+          $('.add_wrap > p > i').removeClass('fa-chevron-up').addClass('fa-chevron-down');
+        };
+      })
+
+      
+  </script>
+
+  </main>
+</body>
+</html>
